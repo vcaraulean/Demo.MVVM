@@ -11,11 +11,11 @@ namespace Part1.Tweaks.Proxy.BLToolkit
 		{
 			var viewModel = TypeAccessor.CreateInstance<ViewModel>();
 
-			string changedPropery = null;
-			viewModel.PropertyChanged += (sender, args) => changedPropery = args.PropertyName;
+			string changedProperty = null;
+			viewModel.PropertyChanged += (sender, args) => changedProperty = args.PropertyName;
 
 			viewModel.SimpleProperty = "new value";
-			Assert.That(changedPropery, Is.EqualTo("SimpleProperty"));
+			Assert.That(changedProperty, Is.EqualTo("SimpleProperty"));
 		}
 
 		[Test]

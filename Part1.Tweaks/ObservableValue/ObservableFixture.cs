@@ -12,6 +12,8 @@ namespace Part1.Tweaks.ObservableValue
 		{
 			var model = new ViewModel();
 
+			model.BooleanProperty.Value = !model.BooleanProperty;
+
 			model.BooleanProperty.PropertyChanged += (sender, args) => Console.WriteLine(args.PropertyName);
 			model.BooleanProperty.Value = true;
 

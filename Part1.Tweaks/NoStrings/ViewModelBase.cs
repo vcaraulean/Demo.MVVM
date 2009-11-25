@@ -15,15 +15,8 @@ namespace Part1.Tweaks.NoStrings
 			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 		}
 
-		protected virtual void NotifyOfPropertyChange<T>(Expression<Func<T>> propertyExpression)
-		{
-			var memberExpression = (MemberExpression)propertyExpression.Body;
-			string propertyName = memberExpression.Member.Name;
-			NotifyOfPropertyChange(propertyName);
-		}
-
 		[Conditional("DEBUG")]
-		public void VerifyPropertyName(string propertyName)
+		private void VerifyPropertyName(string propertyName)
 		{
 			if (string.IsNullOrEmpty(propertyName))
 				throw new ArgumentException("propertyName cannot be null or empty");
@@ -35,6 +28,13 @@ namespace Part1.Tweaks.NoStrings
 
 				throw new ArgumentException(msg, "propertyName");
 			}
+		}
+
+		protected virtual void NotifyOfPropertyChange<T>(Expression<Func<T>> propertyExpression)
+		{
+			var memberExpression = (MemberExpression)propertyExpression.Body;
+			string propertyName = memberExpression.Member.Name;
+			NotifyOfPropertyChange(propertyName);
 		}
 	}
 }

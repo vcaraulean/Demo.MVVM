@@ -14,21 +14,19 @@ namespace Part4.MixItUp
 	/// </summary>
 	public partial class App : CaliburnApplication
 	{
-		protected override void ConfigureCaliburn(IEnumerable<Caliburn.Core.ComponentInfo> components)
+		private void AddAlias()
 		{
-			base.ConfigureCaliburn(components);
-
 			var viewSteategy = Container.GetInstance<IViewStrategy>() as DefaultViewStrategy;
 
 			if (viewSteategy != null)
-				viewSteategy.AddNamespaceAlias("Part4.MixItUp.ViewModels.BLToolkitExtension", "Part4.MixItUp.Views");
-
+				viewSteategy.AddNamespaceAlias("Part4.MixItUp.Views.BLToolkitExtension", "Part4.MixItUp.Views");
 		}
 
 		protected override object CreateRootModel()
 		{
-						return new ViewModels.Naked_CreateEmployeeViewModel();
-//			return TypeAccessor.CreateInstance<ViewModels.CreateEmployeeViewModel>();
+			AddAlias();
+//						return new ViewModels.Naked_CreateEmployeeViewModel();
+			return TypeAccessor.CreateInstance<ViewModels.CreateEmployeeViewModel>();
 		}
 	}
 }

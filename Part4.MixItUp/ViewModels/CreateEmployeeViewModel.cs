@@ -8,14 +8,14 @@ namespace Part4.MixItUp.ViewModels
 		public abstract string FirstName { get; set; }
 		public abstract string LastName { get; set; }
 
-		public bool CanSave
+		public bool CanSaveAnEmployee()
 		{
-			get { return !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName); }
+			return !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName);
 		}
 
-		public void Save()
+		public void SaveEmployee()
 		{
-			MessageBox.Show("Saved.");
+			MessageBox.Show(string.Format("Saved '{0} {1}'.", FirstName, LastName));
 		}
 	}
 }

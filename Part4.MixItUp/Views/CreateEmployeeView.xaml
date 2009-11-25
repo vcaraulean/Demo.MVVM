@@ -26,7 +26,7 @@
                  Grid.Column="1"/>
 
         <Button Content="Save"
-                pf:Message.Attach="Save"
+                pf:Message.Attach="SaveEmployee"
                 HorizontalAlignment="Right"    
                 Margin="0 4 0 0"   
                 Grid.Row="2"   

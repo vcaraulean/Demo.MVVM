@@ -43,7 +43,7 @@ namespace Part4.MixItUp.ViewModels
 
 		public void Save()
 		{
-			MessageBox.Show("Saved.");
+			MessageBox.Show(string.Format("Saved '{0} {1}'.", FirstName, LastName));
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged = delegate { };

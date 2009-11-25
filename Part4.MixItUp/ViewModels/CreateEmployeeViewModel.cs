@@ -1,5 +1,6 @@
 using System.Windows;
 using BLToolkit.EditableObjects;
+using Caliburn.PresentationFramework.Filters;
 
 namespace Part4.MixItUp.ViewModels
 {
@@ -8,14 +9,15 @@ namespace Part4.MixItUp.ViewModels
 		public abstract string FirstName { get; set; }
 		public abstract string LastName { get; set; }
 
-		public bool CanSaveAnEmployee()
-		{
-			return !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName);
-		}
-
+		[Dependencies("FirstName", "LastName")]
 		public void SaveEmployee()
 		{
 			MessageBox.Show(string.Format("Saved '{0} {1}'.", FirstName, LastName));
+		}
+
+		public bool CanSaveEmployee()
+		{
+			return !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName);
 		}
 	}
 }

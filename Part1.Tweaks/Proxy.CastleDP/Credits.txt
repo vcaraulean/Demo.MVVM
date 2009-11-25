@@ -1,0 +1,5 @@
+﻿Ayende:
+http://ayende.com/Blog/archive/2009/08/07/nhibernate-amp-inotifypropertychanged.aspx
+
+And José F. Romaniello: INotifyPropertyChanged as AOP
+http://jfromaniello.blogspot.com/2009/07/inotifypropertychanged-as-aop.html

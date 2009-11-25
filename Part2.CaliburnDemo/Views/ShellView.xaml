@@ -1,0 +1,14 @@
+﻿<Window x:Class="Part2.CaliburnDemo.Views.ShellView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pf="clr-namespace:Caliburn.PresentationFramework;assembly=Caliburn.PresentationFramework"
+    Title="Caliburn Demo" Height="300" Width="300"
+        FontSize="14">
+    <Grid Margin="15">
+        <StackPanel>
+            <TextBlock Text="{Binding Message}" />
+            <Button pf:Message.Attach="ChangeMessage"
+                    Content="Click Me" />
+        </StackPanel>
+    </Grid>
+</Window>

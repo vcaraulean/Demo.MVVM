@@ -1,0 +1,10 @@
+﻿<ApplicationModel:CaliburnApplication x:Class="Part2.CaliburnDemo.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ApplicationModel="clr-namespace:Caliburn.PresentationFramework.ApplicationModel;assembly=Caliburn.PresentationFramework"
+    >
+    <Application.Resources>
+         <SolidColorBrush x:Key="brownBrush"
+                         Color="#FF513100" />
+    </Application.Resources>
+</ApplicationModel:CaliburnApplication>

@@ -1,0 +1,2 @@
+﻿Thanks to Rob Eisenberg for this sample
+http://devlicio.us/blogs/rob_eisenberg/archive/2009/11/13/mvvm-study-part-4-naked-wpf.aspx

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2.CaliburnDemo", "Part2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part3.CaliburnTestability", "Part3.CaliburnTestability\Part3.CaliburnTestability.csproj", "{BCAE020A-20FA-478B-BCAC-8B3EEA05C220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part4.MixItUp", "Part4.MixItUp\Part4.MixItUp.csproj", "{D78B00D4-1631-4211-BBA2-C6CEC35FEB41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part4.MixIt", "Part4.MixItUp\Part4.MixIt.csproj", "{D78B00D4-1631-4211-BBA2-C6CEC35FEB41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

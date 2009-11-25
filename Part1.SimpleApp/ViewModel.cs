@@ -6,7 +6,7 @@ namespace Part1.SimpleApp
 {
 	public abstract class ViewModel : EditableObject<ViewModel>
 	{
-		private readonly Timer timer;
+		private Timer timer;
 
 		protected ViewModel()
 		{
@@ -14,6 +14,11 @@ namespace Part1.SimpleApp
 			LastName = "Caraulean";
 			BirthDate = new DateTime(1979, 4, 21);
 
+			SetUpTimer();
+		}
+
+		private void SetUpTimer()
+		{
 			timer = new Timer(1000);
 			timer.Elapsed += (sender, args) =>
 			{

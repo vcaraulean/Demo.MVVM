@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Part1.Tweaks.EventsToCommands.View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:l="clr-namespace:Part1.Tweaks.EventsToCommands.Impl"
+    Height="300" Width="300">
+    <Grid>
+        <TextBox>
+            <l:InputBinder.Bindings>
+                <l:KeyBinding Key="Insert" Command="{Binding NewItemCommand}" />
+                <l:KeyBinding Key="Delete" Command="{Binding DeleteItemCommand}"/>
+                <l:KeyBinding Key="Enter"  Command="{Binding EditItemCommand}" />
+                <l:MouseBinding Gesture="LeftDoubleClick" Command="{Binding EditItemCommand}"/>
+            </l:InputBinder.Bindings>
+
+            <l:EventCommander.Mappings>
+                <l:CommandEvent Event="TextChanged" Command="{Binding TextChangedCommand}" />
+            </l:EventCommander.Mappings>
+
+        </TextBox>
+    </Grid>
+</UserControl>

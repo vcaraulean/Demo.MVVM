@@ -24,10 +24,10 @@ namespace Part4.MixItUp
 
 		protected override object CreateRootModel()
 		{
-			return new ViewModels.Naked_CreateEmployeeViewModel();
+//			return new ViewModels.Naked_CreateEmployeeViewModel();
 
-//			AddAlias();
-//			return TypeAccessor.CreateInstance<ViewModels.CreateEmployeeViewModel>();
+			AddAlias();
+			return TypeAccessor.CreateInstance<ViewModels.CreateEmployeeViewModel>();
 		}
 	}
 }

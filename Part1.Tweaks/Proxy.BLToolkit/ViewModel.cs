@@ -6,4 +6,5 @@ namespace Part1.Tweaks.Proxy.BLToolkit
 	{
 		public abstract string SimpleProperty { get; set; }
 	}
+
 }

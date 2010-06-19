@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part0.NakedMVVM", "Part0.NakedMVVM\Part0.NakedMVVM.csproj", "{A3F7BA6D-14BD-4CF5-8E33-24A65786C98C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part1.SimpleApp", "Part1.SimpleApp\Part1.SimpleApp.csproj", "{E8405B85-D7CE-4A29-AC19-388DF8B00E2E}"
